@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Search</title>
+</head>
+<body>
+    <h1>Video Game Search</h1>
+
+    
+    <form action="" id="gameForm">
+        <select id="genreSelect">
+        <option value="all">Minden kategória</option>
+        <option value="mmorpg">MMORPG</option>
+        <option value="shooter">Shooter</option>
+        <option value="moba">MOBA</option>
+        <option value="anime">Anime</option>
+        <option value="strategy">Strategy</option>
+        <option value="racing">Racing</option>
+    </select>
+
+        <input 
+        type="text"
+        id="searchInput"
+        placeholder="Enter a game title"
+        >
+
+        <button type="submit">Search</button>
+        <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <div id="loading"></div>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

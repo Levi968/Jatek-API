@@ -1,0 +1,110 @@
+/* 1. Alapbeállítások - Az egész oldalra vonatkoznak */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e; /* Sötétkék háttér */
+    color: #ffffff;           /* Fehér szöveg */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Mindent középre rendez */
+}
+
+/* 2. Címsor stílusa */
+h1 {
+    color: #00d2ff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* 3. A kereső form elrendezése */
+#gameForm {
+    margin-bottom: 30px;
+    background: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* 4. Az input mező (ahova írsz) */
+#searchInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    outline: none;
+}
+
+/* 5. Gombok stílusa */
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s; /* Lágy átmenet a színváltáskor */
+}
+
+button[type="submit"] {
+    background-color: #00d2ff;
+    color: #1a1a2e;
+}
+
+#resetBtn {
+    background-color: #e94560;
+    color: white;
+    margin-left: 10px;
+}
+
+button:hover {
+    opacity: 0.8; /* Elhalványul, ha ráviszed az egeret */
+    transform: scale(1.05); /* Kicsit megnő */
+}
+
+/* 6. A találati lista rácsa (Grid) */
+#result {
+    display: grid;
+    /* Automatikusan annyi oszlop, amennyi kifér, minimum 280px szélesek */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* 7. Egy darab játék kártya stílusa */
+.game-card {
+    background: #16213e;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #0f3460;
+    transition: transform 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-10px); /* Kicsit "felemelkedik" */
+    border-color: #00d2ff;
+}
+
+.game-card img {
+    width: 100%;       /* Kitölti a kártya szélességét */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.game-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00d2ff;
+    text-decoration: none;
+    border: 1px solid #00d2ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#genreSelect {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    background-color: white;
+    cursor: pointer;
+}
